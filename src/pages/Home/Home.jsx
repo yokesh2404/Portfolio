@@ -1,6 +1,8 @@
 import Footer from "../../components/footer";
 import NavBar from "../../components/Navbar";
 import "./Home.css";
+import Typewriter from "./type";
+import Type from "./type";
 
 export default function Home() {
   const numStars = 100; // Number of stars
@@ -32,6 +34,35 @@ export default function Home() {
       </div>
       <div className="content">
         <NavBar />
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div className="body">
+          <div>
+            <h1
+              style={{ paddingBottom: 15, color: "white" }}
+              className="heading"
+            >
+              Hi There!{" "}
+              <span className="wave" role="img" aria-labelledby="wave">
+                👋🏻
+              </span>
+            </h1>
+            <h1 className="heading-name">
+              I'M
+              <strong className="main-name"> YOKESHWARAN NAGARAJAN</strong>
+            </h1>
+            <div style={{ paddingTop: 50, textAlign: "left" }}>
+              <Typewriter />
+            </div>
+          </div>
+          <img className="home-main-image" src="./home-main.svg" />
+        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        {/* <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
@@ -59,8 +90,7 @@ export default function Home() {
         <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
+        <div style={{ color: "white" }}>Hello world</div> */}
 
         <footer>
           <Footer />

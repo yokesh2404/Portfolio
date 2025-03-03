@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -7,65 +6,54 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
+import "./footer.css";
+import { github, linkedin } from "../utils/app_urls";
+
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  let year = new Date().getFullYear();
   return (
-    // <div style={{ color: "red" }}>Footer</div>
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/soumyajit4419/"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <div className="footer-body">
+      <div className="social-media">
+        <a
+          href={github}
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillGithub />
+        </a>
+
+        {/* <a
+          href="https://twitter.com/Yokeshwaran"
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiOutlineTwitter />
+        </a> */}
+
+        <a
+          href={linkedin}
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaLinkedinIn />
+        </a>
+
+        {/* <a
+          href="https://www.instagram.com/yokeshwaran"
+          style={{ color: "white" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AiFillInstagram />
+        </a> */}
+      </div>
+      {/* <br /> */}
+      {/* <p>Designed and Developed by Yokeshwaran Nagarajan</p> */}
+      <p>Copyright © {year} YN</p>
+    </div>
   );
 }
 
