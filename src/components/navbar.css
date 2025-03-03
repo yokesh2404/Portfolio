@@ -1,0 +1,37 @@
+.default-nav {
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark transparent */
+    backdrop-filter: blur(10px);
+    /* Glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scrolled-nav {
+    background: rgba(255, 255, 255, 0.1);
+    /* Light transparent */
+    backdrop-filter: blur(20px);
+    /* Increased blur on scroll */
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on scroll */
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Make navbar links visible */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+}
+
+.scrolled-nav .navbar-nav .nav-link {
+    color: white !important;
+}
+
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
