@@ -6,6 +6,7 @@
     min-height: 100vh;
     font-family: "Outfit";
     position: relative;
+    overflow-x: hidden;
     /* background-image: url('./night_sky_stars.jpeg'); */
     /* Relative path */
     /* background-size: cover; */
@@ -139,5 +140,27 @@
 @keyframes blink {
     50% {
         opacity: 0;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .body {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 768px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .body {
+        display: flex;
+        flex-direction: column;
     }
 }
