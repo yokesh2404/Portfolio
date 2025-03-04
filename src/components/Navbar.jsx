@@ -61,17 +61,17 @@ export default function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/courses">
+              <NavLink className="nav-link" to="/">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about">
+              <NavLink className="nav-link" to="/">
                 Projects
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">
+              <NavLink className="nav-link" to="/">
                 Resume
               </NavLink>
             </li>
