@@ -60,8 +60,7 @@ export default function Home() {
           <img className="home-main-image" src="./home-main.svg" />
         </div>
         <br></br>
-        <br></br>
-        <br></br>
+
         {/* <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
         <div style={{ color: "white" }}>Hello world</div>
