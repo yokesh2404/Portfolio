@@ -12,7 +12,7 @@ export default function Home() {
       {" "}
       <div className="star-container">
         {stars.map((_, index) => {
-          const top = Math.random() * 100 + "vh";
+          const top = Math.random() * 200 + "vh";
           const left = Math.random() * 100 + "vw";
           const delay = Math.random() * 3 + "s";
           const size = Math.random() * 4 + 1 + "px";
@@ -59,37 +59,8 @@ export default function Home() {
           </div>
           <img className="home-main-image" src="./home-main.svg" />
         </div>
-        <br></br>
 
-        {/* <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div>
-        <div style={{ color: "white" }}>Hello world</div> */}
+        <br></br>
 
         <footer>
           <Footer />
