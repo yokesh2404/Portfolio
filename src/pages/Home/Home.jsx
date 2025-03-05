@@ -59,6 +59,11 @@ export default function Home() {
           </div>
           <img className="home-main-image" src="./home-main.svg" />
         </div>
+        {/* <br/>
+
+        <div >
+         <h1>Let me introduce My Self</h1>
+        </div> */}
 
         <br></br>
 

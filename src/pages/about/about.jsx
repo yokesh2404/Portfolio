@@ -51,9 +51,19 @@ export default function About() {
         <NavBar />
         <br></br>
         <br></br>
-        <br></br>
+
+        {/* <br></br> */}
         <div className="body">
           <div>
+            {/* <div className="heading-about">
+              {" "}
+              <h1
+                style={{ paddingBottom: 15, color: "white" }}
+                className="heading"
+              >
+                Know Who <span>I'M</span>
+              </h1>
+            </div> */}
             <h1
               style={{ paddingBottom: 15, color: "white" }}
               className="heading"
@@ -69,27 +79,34 @@ export default function About() {
                 <span>Yokeshwaran</span>
               </strong>{" "}
               from Mannargudi, currently working as a Software Developer at
-              Gramosoft Pvt Ltd, Chennai. I completed my Bachelor of Engineering
-              in Computer Science and Engineering in 2020 from Shri Sapthagiri
-              Institute of Technology, Vellore. I specialize in cross-platform
-              mobile application development using Flutter & React Native, with
-              6+ applications successfully deployed on the Play Store and App
-              Store. My expertise includes state management (Bloc, GetX, Redux),
-              Firebase, REST APIs, and payment gateway integrations. In addition
-              to mobile development, I'm passionate about full-stack web
-              development, building applications using React.js for the frontend
-              and Node.js for the backend to create seamless and scalable
-              solutions.
+              Gramosoft Pvt Ltd, Chennai.
             </p>
-            {/* <h1 className="heading-name">
-              I'M
-              <strong className="main-name"> YOKESHWARAN NAGARAJAN</strong>
-            </h1> */}
-            {/* <div style={{ paddingTop: 50, textAlign: "left" }}>
-              <Typewriter />
-            </div> */}
+
+            <p>
+              {" "}
+              I completed my{" "}
+              <span>
+                Bachelor of Engineering in Computer Science and Engineering{" "}
+              </span>
+              in 2020 from Shri Sapthagiri Institute of Technology, Vellore.
+            </p>
+            <p>
+              I specialize in cross-platform mobile application development
+              using <span>Flutter & React Native</span>, with 6+ applications
+              successfully deployed on the Play Store and App Store.
+            </p>
+            <p>
+              My expertise includes state management (Bloc, GetX, Redux),
+              Firebase, REST APIs, and payment gateway integrations.
+            </p>
+            <p>
+              In addition to mobile development, I'm passionate about full-stack
+              web development, building applications using <span>React.js</span>{" "}
+              for the frontend and <span>Node.js</span> for the backend to
+              create seamless and scalable solutions.
+            </p>
           </div>
-          {/* <img className="home-main-image" src="./home-main.svg" /> */}
+          <img className="about-main-image" src="./about.png" />
         </div>
         <br />
         <div className="center-skillset">
