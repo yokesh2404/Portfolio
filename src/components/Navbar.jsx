@@ -66,14 +66,26 @@ export default function NavBar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/projects">
                 Projects
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              {/* <NavLink className="nav-link"> */}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-link"
+                style={{
+                  color: "white",
+                  textDecoration: "none",
+                  textAlign: "end",
+                }}
+                href="https://lvhtbhfdnxsgwhyeiiws.supabase.co/storage/v1/object/public/myProfile//yokeshwaran.pdf"
+              >
                 Resume
-              </NavLink>
+              </a>
+              {/* </NavLink> */}
             </li>
           </ul>
         </div>
