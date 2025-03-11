@@ -79,7 +79,7 @@ export default function NavBar() {
                 style={{
                   color: "white",
                   textDecoration: "none",
-                  textAlign: "end",
+                  textAlign: "center",
                 }}
                 href="https://lvhtbhfdnxsgwhyeiiws.supabase.co/storage/v1/object/public/myProfile//yokeshwaran.pdf"
               >

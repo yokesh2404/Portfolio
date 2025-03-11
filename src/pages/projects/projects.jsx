@@ -69,8 +69,8 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="screen-overlay">
-      <div className="star-container">
+    <div className="projects-screen-overlay">
+      <div className="projects-star-container">
         {stars.map((_, index) => {
           const top = Math.random() * 200 + "vh";
           const left = Math.random() * 100 + "vw";
@@ -80,7 +80,7 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className="star"
+              className="projects-star"
               style={{
                 top,
                 left,
@@ -92,21 +92,24 @@ export default function Projects() {
           );
         })}
       </div>
-      <div className="content">
+      <div className="projects-content">
         <NavBar />
         <br></br>
-        <div className="headings">
-          <h1 className="h1-headings">
+        <div className="projects-headings">
+          <h1 className="projects-h1-headings">
             My Recent <span>Works</span>
           </h1>
           <p>Here are a few projects I've worked on recently</p>
         </div>
-        <div className="skills-grid">
+        <div className="projects-skills-grid">
           {projectsList.map((project) => {
             return (
-              <div className="skill-card">
-                <div className="projects-card">
-                  <img src={project.image} className="project-images" />
+              <div className="projects-skill-card">
+                <div className="projects-projects-card">
+                  <img
+                    src={project.image}
+                    className="projects-project-images"
+                  />
                   <h3>{project.name}</h3>
                   <p>{project.description}</p>
                 </div>
